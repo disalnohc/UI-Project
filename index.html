@@ -29,79 +29,360 @@
         <div class="collapse navbar-collapse" id="navbarNavDropdown">
           <!-- Left Navigation -->
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-head" style="color: white;">
-              <a class="nav-link" aria-current="page" style="font-size: 24px;">อนิเมะ</a>
+            <li class="nav-item">
+              <a class="nav-link">หน้าหลัก</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link">ยอดฮิต</a>
+              <a class="nav-link">อนิเมะ</a>
             </li>
-            <li class="nav-week">
-              <a class="nav-link">อา.</a>
+            <li class="nav-item">
+              <a class="nav-link">กำลังมาแรง</a>
             </li>
-            <li class="nav-week">
-              <a class="nav-link">จ.</a>
-            </li>
-            <li class="nav-week">
-              <a class="nav-link">อ.</a>
-            </li>
-            <li class="nav-week">
-              <a class="nav-link">พ.</a>
-            </li>
-            <li class="nav-week">
-              <a class="nav-link">พฤ.</a>
-            </li>
-            <li class="nav-week">
-              <a class="nav-link">ศ.</a>
-            </li>
-            <li class="nav-week">
-              <a class="nav-link">ส.</a>
+            <li class="nav-item">
+              <a class="nav-link">หมวดหมู่</a>
             </li>
           </ul>
         </div>
         <!-- Right Navigation -->
         <div class="dropdown">
-          <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="white" class="icon"
+          <!-- Dropdown Upload -->
+          <svg class="uploadIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+            class="bi bi-upload" viewBox="0 0 16 16">
+            <path
+              d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+            <path
+              d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+          </svg>
+
+          <ul class="upload-menu">
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload"
+                viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                <path
+                  d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+              </svg>อัปโหลด</li>
+            <hr>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn"
+                viewBox="0 0 16 16">
+                <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+              </svg>วิดีโอของฉัน
+            </li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-graph-up" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M0 0h1v15h15v1H0zm14.817 3.113a.5.5 0 0 1 .07.704l-4.5 5.5a.5.5 0 0 1-.74.037L7.06 6.767l-3.656 5.027a.5.5 0 0 1-.808-.588l4-5.5a.5.5 0 0 1 .758-.06l2.609 2.61 4.15-5.073a.5.5 0 0 1 .704-.07" />
+              </svg>การวิเคราะห์ข้อมูล
+            </li>
+            <li>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg>การจัดการการโต้ตอบ
+            </li>
+          </ul>
+          <!-- Dropdown Before -->
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock beforeIcon"
+            viewBox="0 0 16 16">
+            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71z" />
+            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16m7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0" />
+          </svg>
+          <ul class="before-menu">
+            <div class="viewAllBtn">
+              <button>ดูทั้งหมด</button>
+            </div>
+            <div class="list-video">
+              <li class="header">เมื่อวานนี้</li>
+            <li class="list-yesterday">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+              <p class="title">Alya Sometimes Hides Her Feelings in Russian</p>
+              <p class="watchedEpisode" style="margin-top: -2.5vh;">ดูถึง บทที่12 20:48</p>
+              <p class="viewTimeStamp">เมื่อวานนี้ 01:50</p>
+              </div>
+            </li>
+             <li class="header">ก่อนหน้านี้</li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/99d963532512c5a7ea974204138faf6f.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Berserk of Gluttony</p>
+                <p class="watchedEpisode" style="margin-top: -5vh !important;">ดูถึง บทที่11 19:48</p>
+                <p class="viewTimeStamp" style="margin-top: 3.5vh;">เมื่อวานนี้ 01:10</p>
+                </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/239c7aea365895b07ad5eb95f947c9f7.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Love Is Indivisible by Twins</p>
+                <p class="watchedEpisode" style="margin-top: -5vh !important;">ดูถึง บทที่10 20:48</p>
+                <p class="viewTimeStamp" style="margin-top: 3.5vh;">เมื่อวานนี้ 00:01</p>
+                </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/626b30dc8203a0e263bba0a191a8f7be.jpe" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">DARLING in the FRANXX</p>
+                <p class="watchedEpisode" style="margin-top: -5vh !important;">ดูถึง บทที่19 14:14</p>
+                <p class="viewTimeStamp" style="margin-top: 3.5vh;">15/08/2567 01:50</p>
+                </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6b17182a3518d7406f0e69687f773f4f.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Demon Slayer: Kimetsu no Yaiba</p>
+                <p class="watchedEpisode">ดูถึง บทที่12 20:48</p>
+                <p class="viewTimeStamp">14/08/2567 01:50</p>
+                </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpe" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">JUJUTSU KAISEN</p>
+                <p class="watchedEpisode" style="margin-top: -5vh !important;">ดูถึง บทที่12 20:48</p>
+                <p class="viewTimeStamp" style="margin-top: 3.5vh;">13/08/2567 01:50</p>
+                </div>
+             </li>
+            </div>   
+          </ul>
+          <!-- Dropdown Bookmark -->
+          <svg class="bookmarkIcon" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-bookmark"
             viewBox="0 0 16 16">
             <path
-              d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+              d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z" />
           </svg>
-          <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="white" class="icon"
-            viewBox="0 0 16 16">
-            <path
-              d="M8 16a2 2 0 0 0 2-2H6a2 2 0 0 0 2 2m.995-14.901a1 1 0 1 0-1.99 0A5 5 0 0 0 3 6c0 1.098-.5 6-2 7h14c-1.5-1-2-5.902-2-7 0-2.42-1.72-4.44-4.005-4.901" />
-          </svg>
-          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false"
-            style="color: white;">
+
+          <ul class="bookmark-menu">
+            <div class="viewAllBtn">
+              <button>ดูทั้งหมด</button>
+            </div>
+            <div class="list-video">
+            <li class="list-yesterday">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+              <p class="title">Alya Sometimes Hides Her Feelings in Russian</p>
+              <p class="watchedEpisode">ดูถึง บทที่12 20:48</p>
+              <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+            </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/99d963532512c5a7ea974204138faf6f.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Berserk of Gluttony</p>
+                <p class="watchedEpisode">ดูถึง บทที่11 19:48</p>
+                <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/239c7aea365895b07ad5eb95f947c9f7.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Love Is Indivisible by Twins</p>
+                <p class="watchedEpisode">ดูถึง บทที่10 20:48</p>
+                <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/626b30dc8203a0e263bba0a191a8f7be.jpe" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">DARLING in the FRANXX</p>
+                <p class="watchedEpisode">ดูถึง บทที่19 14:14</p>
+                <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/6b17182a3518d7406f0e69687f773f4f.jpg" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">Demon Slayer: Kimetsu no Yaiba</p>
+                <p class="watchedEpisode">ดูถึง บทที่12 20:48</p>
+                <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+             </li>
+             <li class="list-before">
+              <div class="videoYesterday">
+                <img src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/8b7f5847f9b97f921e41d4ef59fd2d79.jpe" width="150" height="80">
+                <span class="bottom-right">จบแล้ว</span>
+              </div>
+              <div>
+                <p class="title">JUJUTSU KAISEN</p>
+                <p class="watchedEpisode">ดูถึง บทที่12 20:48</p>
+                <p class="viewTimeStamp">ดูถึง บทที่ 3</p>
+              </div>
+             </li>
+            </div>   
+          </ul>
+          <!-- Dropdown Download -->
+          <button class="downloadBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+              class="bi bi-download" viewBox="0 0 16 16">
+              <path
+                d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+              <path
+                d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+            </svg>แอป</button>
+            <ul class="download-menu">
+              <li style="padding: 5px 10px 5px 10px ;">ดาวน์โหลดแอป สัมผัสประสบการณ์ที่ยอดเยี่ยมมากขึ้น</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-hd" viewBox="0 0 16 16">
+                <path d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843z"/>
+                <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+              </svg>คุณภาพวิดีโอที่สูงขึ้น</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-btn"
+                viewBox="0 0 16 16">
+                <path d="M6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814z" />
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm15 0a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1z" />
+              </svg>ลื่นไหลมากขึ้น ไม่มีสะดุด</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-download" viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                <path
+                  d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z" />
+              </svg>ดาวน์โหลดเพื่อรับชมออฟไลน์ได้ตลอดเวลา</li>
+              <hr>
+              <li style="color: rgb(155, 154, 154); font-size: 12px;">สแกนรหัส QR ด้านล่างหรือ <span style="color: blue;">คัดลอกลิงก์</span>  แล้วส่งไปยังโทรศัพท์มือถือเพื่อดาวน์โหลดแอป</li>
+              <img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/QR_code_for_mobile_English_Wikipedia.svg" height="200px" width="200px"/>
+              <li style="color: rgb(155, 154, 154); font-size: 12px; text-align: center;">Provided by balaboom</li>
+            </ul>
+          <!-- Dropdown Premium -->
+          <button class="premiumBtn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="white"
+              class="bi bi-gem" viewBox="0 0 16 16">
+              <path
+                d="M3.1.7a.5.5 0 0 1 .4-.2h9a.5.5 0 0 1 .4.2l2.976 3.974c.149.185.156.45.01.644L8.4 15.3a.5.5 0 0 1-.8 0L.1 5.3a.5.5 0 0 1 0-.6zm11.386 3.785-1.806-2.41-.776 2.413zm-3.633.004.961-2.989H4.186l.963 2.995zM5.47 5.495 8 13.366l2.532-7.876zm-1.371-.999-.78-2.422-1.818 2.425zM1.499 5.5l5.113 6.817-2.192-6.82zm7.889 6.817 5.123-6.83-2.928.002z" />
+            </svg>Premium<span data-v-316b18d6="" class="bstar-header__benefits-button-tip">ขายดีอย่างมาก</span></button>
+            <ul class="premium-menu">
+              <li>สิทธิ์ Premium</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-film" viewBox="0 0 16 16">
+                <path d="M0 1a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1zm4 0v6h8V1zm8 8H4v6h8zM1 1v2h2V1zm2 3H1v2h2zM1 7v2h2V7zm2 3H1v2h2zm-2 3v2h2v-2zM15 1h-2v2h2zm-2 3v2h2V4zm2 3h-2v2h2zm-2 3v2h2v-2zm2 3h-2v2h2z"/>
+              </svg>เนื้อหา Premium</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-fire" viewBox="0 0 16 16">
+                <path d="M8 16c3.314 0 6-2 6-5.5 0-1.5-.5-4-2.5-6 .25 1.5-1.25 2-1.25 2C11 4 9 .5 6 0c.357 2 .5 4-2 6-1.25 1-2 2.729-2 4.5C2 14 4.686 16 8 16m0-1c-1.657 0-3-1-3-2.75 0-.75.25-2 1.25-3C6.125 10 7 10.5 7 10.5c-.375-1.25.5-3.25 2-3.5-.179 1-.25 2 1 3 .625.5 1 1.364 1 2.25C11 14 9.657 15 8 15"/>
+              </svg>ดูเนื้อหาก่อนใคร</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-hd" viewBox="0 0 16 16">
+                <path d="M7.396 11V5.001H6.209v2.44H3.687V5H2.5v6h1.187V8.43h2.522V11zM8.5 5.001V11h2.188c1.811 0 2.685-1.107 2.685-3.015 0-1.894-.86-2.984-2.684-2.984zm1.187.967h.843c1.112 0 1.622.686 1.622 2.04 0 1.353-.505 2.02-1.622 2.02h-.843z"/>
+                <path d="M14 3a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4a1 1 0 0 1 1-1zM2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2z"/>
+              </svg>ความละเอียดสูง</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-pc-display" viewBox="0 0 16 16">
+                <path d="M8 1a1 1 0 0 1 1-1h6a1 1 0 0 1 1 1v14a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1zm1 13.5a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0m2 0a.5.5 0 1 0 1 0 .5.5 0 0 0-1 0M9.5 1a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM9 3.5a.5.5 0 0 0 .5.5h5a.5.5 0 0 0 0-1h-5a.5.5 0 0 0-.5.5M1.5 2A1.5 1.5 0 0 0 0 3.5v7A1.5 1.5 0 0 0 1.5 12H6v2h-.5a.5.5 0 0 0 0 1H7v-4H1.5a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5H7V2z"/>
+              </svg>ใช้ได้หลากหลาย</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-arrow-down" viewBox="0 0 16 16">
+                <path d="M8 5a.5.5 0 0 1 .5.5v3.793l1.146-1.147a.5.5 0 0 1 .708.708l-2 2a.5.5 0 0 1-.708 0l-2-2a.5.5 0 1 1 .708-.708L7.5 9.293V5.5A.5.5 0 0 1 8 5"/>
+                <path d="M4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm0 1h8a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1"/>
+              </svg>ดาวโหลดฟรี</li>
+              <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-badge-ad-fill" viewBox="0 0 16 16">
+                <path d="M11.35 8.337c0-.699-.42-1.138-1.001-1.138-.584 0-.954.444-.954 1.239v.453c0 .8.374 1.248.972 1.248.588 0 .984-.44.984-1.2zm-5.413.237-.734-2.426H5.15l-.734 2.426h1.52z"/>
+                <path d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2zm6.209 6.32c0-1.28.694-2.044 1.753-2.044.655 0 1.156.294 1.336.769h.053v-2.36h1.16V11h-1.138v-.747h-.057c-.145.474-.69.804-1.367.804-1.055 0-1.74-.764-1.74-2.043v-.695zm-4.04 1.138L3.7 11H2.5l2.013-5.999H5.9L7.905 11H6.644l-.47-1.542H4.17z"/>
+              </svg>ข้ามโฆษณา</li>
+              <button>ต่อ Premium</button>
+            </ul>
+          <!-- Dropdown Profile -->
+          <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <img class="rounded" src="./image/profile.jpg" width="34px" height="34px" alt="profile" />
           </button>
-          <ul class="dropdown-menu" style="background: rgb(37, 36, 36); color: white; padding: 10px;">
-            <li><a >Profile</a></li>
-            <li><a>Setting</a></li>
-            <li><a>Sign Out</a></li>
+          <ul id="profile" class="dropdown-menu">
+            <li style="margin-top: 5px;"><img src="./image/profile.jpg" width="50px" height="50px" alt="profile"
+                style="border-radius: 50%; margin-right: 2vh;" /><a style="font-size: 24px">Rattatiou</a></li>
+            <hr>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="bi bi-envelope"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z" />
+              </svg><a>แจ้งเตือนจากระบบ</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-info-circle" viewBox="0 0 16 16">
+                <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
+                <path
+                  d="m8.93 6.588-2.29.287-.082.38.45.083c.294.07.352.176.288.469l-.738 3.468c-.194.897.105 1.319.808 1.319.545 0 1.178-.252 1.465-.598l.088-.416c-.2.176-.492.246-.686.246-.275 0-.375-.193-.304-.533zM9 4.5a1 1 0 1 1-2 0 1 1 0 0 1 2 0" />
+              </svg><a>โปรไฟล์ของฉัน</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-upload"
+                viewBox="0 0 16 16">
+                <path
+                  d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5" />
+                <path
+                  d="M7.646 1.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 2.707V11.5a.5.5 0 0 1-1 0V2.707L5.354 4.854a.5.5 0 1 1-.708-.708z" />
+              </svg><a>ครีเอเตอร์เซนเตอร์</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-globe"
+                viewBox="0 0 16 16">
+                <path
+                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m7.5-6.923c-.67.204-1.335.82-1.887 1.855A8 8 0 0 0 5.145 4H7.5zM4.09 4a9.3 9.3 0 0 1 .64-1.539 7 7 0 0 1 .597-.933A7.03 7.03 0 0 0 2.255 4zm-.582 3.5c.03-.877.138-1.718.312-2.5H1.674a7 7 0 0 0-.656 2.5zM4.847 5a12.5 12.5 0 0 0-.338 2.5H7.5V5zM8.5 5v2.5h2.99a12.5 12.5 0 0 0-.337-2.5zM4.51 8.5a12.5 12.5 0 0 0 .337 2.5H7.5V8.5zm3.99 0V11h2.653c.187-.765.306-1.608.338-2.5zM5.145 12q.208.58.468 1.068c.552 1.035 1.218 1.65 1.887 1.855V12zm.182 2.472a7 7 0 0 1-.597-.933A9.3 9.3 0 0 1 4.09 12H2.255a7 7 0 0 0 3.072 2.472M3.82 11a13.7 13.7 0 0 1-.312-2.5h-2.49c.062.89.291 1.733.656 2.5zm6.853 3.472A7 7 0 0 0 13.745 12H11.91a9.3 9.3 0 0 1-.64 1.539 7 7 0 0 1-.597.933M8.5 12v2.923c.67-.204 1.335-.82 1.887-1.855q.26-.487.468-1.068zm3.68-1h2.146c.365-.767.594-1.61.656-2.5h-2.49a13.7 13.7 0 0 1-.312 2.5m2.802-3.5a7 7 0 0 0-.656-2.5H12.18c.174.782.282 1.623.312 2.5zM11.27 2.461c.247.464.462.98.64 1.539h1.835a7 7 0 0 0-3.072-2.472c.218.284.418.598.597.933M10.855 4a8 8 0 0 0-.468-1.068C9.835 1.897 9.17 1.282 8.5 1.077V4z" />
+              </svg><a>ภาษา: ภาษาไทย</a></li>
+            <li><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                class="bi bi-chat-square" viewBox="0 0 16 16">
+                <path
+                  d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1h-2.5a2 2 0 0 0-1.6.8L8 14.333 6.1 11.8a2 2 0 0 0-1.6-.8H2a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h2.5a1 1 0 0 1 .8.4l1.9 2.533a1 1 0 0 0 1.6 0l1.9-2.533a1 1 0 0 1 .8-.4H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+              </svg><a>ส่งข้อเสนอแนะ</a></li>
+            <hr>
+            <li style="margin-top: -5px;"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0z" />
+                <path fill-rule="evenodd"
+                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708z" />
+              </svg><a>ออกจากระบบ</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    <div class="anime-top">
-      <img class="img-fluid hot-anime" src="./image/bg_img.png" width="100%" height="100%" />
-      <img src="./image/alya.png" style="margin-top: 10vh; margin-left: 2vh;" />
+    <!-- Video Player -->
+    <div class="anime-top" style="height: 100vh; z-index: -3;">
+      <div class="video-container">
+        <img class="hot-anime" src="./image/bg_img.png" />
+        <iframe id="videoFrame" width="560" height="315"
+          src="https://www.youtube.com/embed/FI1yJVjW2ng?enablejsapi=1&controls=0&modestbranding=1&autoplay=1&mute=1" title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"></iframe>
+      </div>
       <!-- Top 3 Anime Today -->
-      <div class="top-3-text" style="margin-top: 4vh; margin-left: 2vh;">
-        <h3 style="font-size: 40px;"><img src="./image/top10.png" alt="" width="45px" height="45px"
-            class="mr-3" />อนิเมะอันดับ 3 วันนี้</h3>
-        <p style="font-size: 15px;">คุณอาเรียที่นั่งโต๊ะข้าง ๆ คุเซะ มาซาจิกะ มักจะมองเขาด้วยสายตาเย็นชาเสมอ
+      <div class="top-3-text">
+        <img class="logo_anime" src="./image/alya.png" width="55%" style="margin-top: -4vh;" />
+        <p style="font-size: 18px;">คุณอาเรียที่นั่งโต๊ะข้าง ๆ คุเซะ มาซาจิกะ มักจะมองเขาด้วยสายตาเย็นชาเสมอ
           แต่บางครั้งเธอก็หลุดพูดภาษารัสเซียขึ้นมาลอย ๆ แน่นอนว่าคำพูด <br>
           พวกนั้นไม่รอดพ้นหูมาซาจิกะเพราะเขามีทักษะการฟังภาษารัสเซียระดับเจ้าของภาษานั่นเอง
           คุณอาเรียที่บางทีก็เผลอพูดออกมาโดยไม่ระวัง <br>
           และมาซาจิกะที่แม้จะเข้าใจความหมาย แต่ก็ยังแกล้งทำเป็นไม่สังเกต
           ความรักชวนจิ้นสุดฟินของทั้งคู่จะไปในทิศทางใดกันนะ
         </p>
-        <button class="play_btn"><svg xmlns="http://www.w3.org/2000/svg"
-            style="margin-right: 1vh;" width="30" height="30" class="bi bi-play-fill" viewBox="0 0 16 16">
+        <button class="play_btn"><svg xmlns="http://www.w3.org/2000/svg" style="margin-right: 1vh;" width="30"
+            height="30" class="bi bi-play-fill" viewBox="0 0 16 16">
             <path
               d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393" />
           </svg>เล่น</button>
-        <button style="color: white; margin-left: 2vh; background-color: rgba(0, 0, 0, 0.2); opacity: 90%;"><svg
+        <button class="moreInfo" style="color: white; margin-left: 2vh; background-color: rgba(0, 0, 0, 0.2); opacity: 90%;"><svg
             xmlns="http://www.w3.org/2000/svg" style="margin-right: 2vh;" fill="white" width="30px" height="30px"
             class="bi bi-info-circle" viewBox="0 0 16 16">
             <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14m0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16" />
@@ -111,89 +392,95 @@
       </div>
       <!-- Right Icon -->
       <div class="right-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="white" class="bi bi-volume-mute"
-          viewBox="0 0 16 16">
-          <path
-            d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06M6 5.04 4.312 6.39A.5.5 0 0 1 4 6.5H2v3h2a.5.5 0 0 1 .312.11L6 10.96zm7.854.606a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0" />
-        </svg>
+        <svg id="volume-icon" xmlns="http://www.w3.org/2000/svg" width="45px" height="45px" fill="white"
+        class="bi bi-volume-mute-fill" viewBox="0 0 16 16" style="margin-right: 2vh; margin-top: -0.5vh;">
+        <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+      </svg>
         <p>13+</p>
       </div>
     </div>
     <!-- Anime List -->
-    <div class="anime-list">
-      <div class="block-1">
-        <p>กำลังมาแรงในช่วงนี้</p>
-        <div class="list">
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-        </div>
-      </div>
-      <div class="block-1">
-
-        <p>วิดีโอแนะนำสำหรับคุณ</p>
-        <div class="list">
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-        </div>
-      </div>
-
-      <div class="block-1">
-        <p>ประเภท Premium</p>
-        <div class="list">
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-          <img
-            src="https://imgsrv.crunchyroll.com/cdn-cgi/image/fit=contain,format=auto,quality=85,width=1200,height=675/catalog/crunchyroll/b0bdcf73a7e00f9bc75131088970288d.jpg"
-            alt="" />
-        </div>
-      </div>
+    <div class="anime-list" style="z-index: 2; position: absolute; margin-top: -30vh;">
+      
     </div>
   </div>
+  <script>
+  
+    //Create Div list to show anime
+function createListMovie() {
+  const animeListDiv = document.querySelector('.anime-list');
+
+for (const category in dataMovie) {
+    const categoryDiv = document.createElement('div');
+    categoryDiv.className = 'block-1';
+
+    const title = document.createElement('p');
+    title.textContent = category;
+    categoryDiv.appendChild(title);
+  
+    const listDiv = document.createElement('div');
+    listDiv.className = 'list';
+
+    const items = dataMovie[category];
+    for (const item in items) {
+        const coverUrl = items[item].cover;
+        const img = document.createElement('img');
+        img.src = coverUrl;
+        img.alt = item;
+        listDiv.appendChild(img);
+    }
+
+    categoryDiv.appendChild(listDiv);
+    animeListDiv.appendChild(categoryDiv);
+}
+}
+
+// Control Youtube API Video
+    function controlsVolumnIframe() {
+    var muteButton = document.getElementById('volume-icon');
+
+    var tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    var player;
+    
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('videoFrame', {
+        events: {
+          'onReady': onPlayerReady
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      muteButton.addEventListener('click', function () {
+        var isMuted = player.isMuted();
+        var isPlayed = player.isPlayed();
+        console.log('click');
+        
+        if (isMuted) {
+          console.log('un');
+          
+          player.unMute();
+          muteButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-up-fill" viewBox="0 0 16 16">
+  <path d="M11.536 14.01A8.47 8.47 0 0 0 14.026 8a8.47 8.47 0 0 0-2.49-6.01l-.708.707A7.48 7.48 0 0 1 13.025 8c0 2.071-.84 3.946-2.197 5.303z"/>
+  <path d="M10.121 12.596A6.48 6.48 0 0 0 12.025 8a6.48 6.48 0 0 0-1.904-4.596l-.707.707A5.48 5.48 0 0 1 11.025 8a5.48 5.48 0 0 1-1.61 3.89z"/>
+  <path d="M8.707 11.182A4.5 4.5 0 0 0 10.025 8a4.5 4.5 0 0 0-1.318-3.182L8 5.525A3.5 3.5 0 0 1 9.025 8 3.5 3.5 0 0 1 8 10.475zM6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06"/>
+</svg>`
+        } else {
+          console.log('mu');
+          player.mute();
+          muteButton.innerHTML = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-volume-mute-fill" viewBox="0 0 16 16">
+  <path d="M6.717 3.55A.5.5 0 0 1 7 4v8a.5.5 0 0 1-.812.39L3.825 10.5H1.5A.5.5 0 0 1 1 10V6a.5.5 0 0 1 .5-.5h2.325l2.363-1.89a.5.5 0 0 1 .529-.06m7.137 2.096a.5.5 0 0 1 0 .708L12.207 8l1.647 1.646a.5.5 0 0 1-.708.708L11.5 8.707l-1.646 1.647a.5.5 0 0 1-.708-.708L10.793 8 9.146 6.354a.5.5 0 1 1 .708-.708L11.5 7.293l1.646-1.647a.5.5 0 0 1 .708 0"/>
+</svg>`
+        }
+      });
+    }
+    }
+    
+  </script>
 </body>
 
 </html>
